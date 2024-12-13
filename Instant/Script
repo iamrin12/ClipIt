@@ -1,0 +1,14 @@
+local args = {
+    [1] = {
+        ["bulkPurchaseData"] = {
+            [1] = {
+                ["creatorId"] = 9843936,
+                ["assetId"] = 113409422471145,
+                ["assetType"] = "HairAccessory",
+                ["creatorType"] = "User"
+            }
+        }
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("PromptBulkPurchase"):InvokeServer(unpack(args))
